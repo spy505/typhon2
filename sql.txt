@@ -1,0 +1,12 @@
+STEP 1: Open Terminal in Kali Linux
+________________________________________
+STEP 2: Navigate to SQLMap Directory
+cd sqlmap
+________________________________________
+STEP 3: Check SQLMap Help
+python3 sqlmap.py -h
+Purpose: Displays all available options in SQLmap
+________________________________________
+STEP 4: Perform Basic SQL Injection Scan
+python3 sqlmap.py -u "http://testphp.vulnweb.com/listproducts.php?cat=1"
+Purpose: Tests the target URL for SQL Injection vulnerability

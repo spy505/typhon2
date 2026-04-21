@@ -1,0 +1,49 @@
+PROCEDURE: NMAP SCANNING IN KALI LINUX
+STEP 1: Verify Nmap is installed in Kali Linux
+nmap --version
+________________________________________
+STEP 2: BASIC SCAN
+nmap 192.168.1.1
+Purpose: Performs a basic scan on the target system
+________________________________________
+STEP 3: PING SCAN (HOST DISCOVERY)
+nmap -sn 192.168.1.0/24
+Purpose: Checks which hosts are alive (no port scanning)
+________________________________________
+STEP 4: TCP PORT SCAN
+nmap 192.168.1.10
+Purpose: Finds open TCP ports
+________________________________________
+STEP 5: TCP SYN SCAN (STEALTH SCAN)
+sudo nmap -sS 192.168.1.10
+Purpose: Performs stealth scan without completing full connection
+________________________________________
+STEP 6: TCP CONNECT SCAN
+nmap -sT 192.168.1.10
+Purpose: Full TCP connection scan (used when SYN scan is restricted)
+________________________________________
+STEP 7: UDP PORT SCAN
+sudo nmap -sU 192.168.1.10
+Purpose: Finds open UDP ports
+________________________________________
+STEP 8: SCAN SPECIFIC PORTS
+nmap -p 22,80,443 192.168.1.10
+PORT RANGE SCAN
+nmap -p 1-1000 192.168.1.10
+________________________________________
+STEP 9: SERVICE AND VERSION DETECTION
+nmap -sV 192.168.1.10
+Purpose: Identifies service name and version
+________________________________________
+STEP 10: OS DETECTION (FINGERPRINTING)
+sudo nmap -O 192.168.1.10
+Purpose: Detects operating system of target
+________________________________________
+STEP 11: AGGRESSIVE SCAN
+sudo nmap -A 192.168.1.10
+Purpose: Enables OS detection, version detection, script scanning, and traceroute
+________________________________________
+STEP 12: SCAN MULTIPLE TARGETS
+nmap 192.168.1.10 192.168.1.120
+IP RANGE SCAN
+nmap 192.168.1.10-50

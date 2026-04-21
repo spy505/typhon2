@@ -1,0 +1,25 @@
+PROCEDURE: COOKIE ANALYSIS USING BROWSER (KALI LINUX)
+STEP 1: Open the target website in Firefox
+http://testfix.net/login.jsp
+STEP 2: Login using test credentials
+Username: admin  
+Password: admin
+________________________________________
+STEP 3: VIEW AND EXPORT COOKIES
+•	Open Developer Tools (Press F12) 
+•	Go to Storage / Application tab 
+•	Select Cookies → testfix.net 
+•	View and take screenshot or export cookie data 
+________________________________________
+STEP 4: DELETE COOKIES
+•	In Developer Tools → Cookies section 
+•	Delete all cookies 
+________________________________________
+STEP 5: RELOAD PAGE
+•	Refresh the website 
+•	Observe behavior (e.g., logged out, session expired) 
+________________________________________
+STEP 6: RESTORE / COMPARE
+•	Restore cookies manually (if possible) OR 
+•	Re-login and compare new cookies with previous snapshot 
+
